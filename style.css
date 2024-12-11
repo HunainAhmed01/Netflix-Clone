@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    color: white;
+}
+body{
+    background-color: black;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
+   background-size: cover;
+}
+.logo{
+    width: 200px;
+    margin-left: 150px;
+}
+.btn1{
+    padding: 5px 16px;
+    border-radius: 5px;
+    background: rgb(229, 9, 20);
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    float: right;
+    margin-top: 33px;
+    margin-right: 150px;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.content h1{
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+.content span{
+    font-size: 20px;
+    font-weight: 600;
+}
+input{
+    padding: 15px 90px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    backdrop-filter: blur(1px);
+    font-size: 18px;
+    
+}
+.content p{
+    margin-top: 40px;
+}
+.btn2{
+    background: rgb(229, 9, 20);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 40px;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.feature{
+     font-size: 22px;
+     padding: 50px 12%;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.more{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.more img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.feature h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.feature p{
+    font-size: 18px;
+}
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+    transition: 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content2{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content2{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.footer{
+    padding: 50px 10% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+   color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.eng{
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.eng img{
+    width: 15px;
+    padding-left: 5px;
+}
+.mycopy{
+    text-align: center;
+    border-top: 5px solid #303030;
+}
+
+@media (max-width: 576px) {
+    header {
+        background-size: contain;
+    }
+
+    .logo {
+        width: 100px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .btn1 {
+        margin-right: 20px;
+        padding: 8px 14px;
+        font-size: 10px;
+    }
+
+    .content {
+        top: 50%;
+    }
+
+    .content h1 {
+        font-size: 27px;
+    }
+
+    .content span {
+        font-size: 14px;
+    }
+
+    .btn2 {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+
+    input {
+        padding: 6px 30px;
+        font-size: 12px;
+    }
+
+    .feature h2 {
+        font-size: 28px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
+
+    .more img {
+        width: 100%;
+    }
+
+    .faq h2 {
+        font-size: 24px;
+    }
+
+    .footer {
+        padding: 20px 5%;
+    }
+
+    .footer h2 {
+        font-size: 14px;
+    }
+
+    .footer .col a {
+        font-size: 10px;
+    }
+
+    .eng {
+        font-size: 10px;
+    }
+
+    .mycopy {
+        font-size: 12px;
+    }
+}
